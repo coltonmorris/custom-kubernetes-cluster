@@ -53,3 +53,10 @@ deb http://apt.kubernetes.io/ kubernetes-xenial main
 3. `sudo apt-get update && sudo apt-get install -y kubelet kubeadm kubectl kubernetes-cni`    
 
 *Viola! Now you can setup your cluster.*
+
+
+## References
+---
+
+* https://www.techrepublic.com/article/how-to-quickly-install-kubernetes-on-ubuntu/
+* https://askubuntu.com/questions/833114/how-to-set-up-ethernet-connection-16-04-server
