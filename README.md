@@ -22,9 +22,9 @@ auto enp0s20
 iface enp0s20 inet dhcp
 ```
 Now restart the interface   
-3. `sudo ifdown enp0s20 && sudo ifup -v enp0s20`
+3. `sudo ifdown enp0s20 && sudo ifup -v enp0s20`    
 Lastly, check if it works   
-4. `ping -c3 www.ubuntu.com` 
+4. `ping -c3 www.ubuntu.com`     
 
 *Viola! Now we can install Docker.*
 
@@ -32,11 +32,11 @@ Lastly, check if it works
 ---
 
 First install `apt-transport-https` - a package that allows using https as well as http in apt repository sources.    
-1. `sudo apt-get update && sudo apt-get install -y apt-transport-https`
+1. `sudo apt-get update && sudo apt-get install -y apt-transport-https`    
 Next install `docker`    
-2. `sudo apt install docker.io`
-Now start and enable the Docker service    
-3. `sudo systemctl start docker && sudo systemctl enable docker`
+2. `sudo apt install docker.io`     
+Now start and enable the Docker service     
+3. `sudo systemctl start docker && sudo systemctl enable docker`      
 
 *Viola! Now we can install Kubernetes.*
 
@@ -44,12 +44,12 @@ Now start and enable the Docker service
 ---
 
 Download and add the key    
-1. `sudo curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add`
+1. `sudo curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add`    
  
 2. Create the file `/etc/apt/sources.list.d/kubernetes.list` with the following contents
 ```
 deb http://apt.kubernetes.io/ kubernetes-xenial main 
-```
-3. `sudo apt-get update && sudo apt-get install -y kubelet kubeadm kubectl kubernetes-cni`
+```    
+3. `sudo apt-get update && sudo apt-get install -y kubelet kubeadm kubectl kubernetes-cni`    
 
 *Viola! Now you can setup your cluster.*
