@@ -54,6 +54,11 @@ deb http://apt.kubernetes.io/ kubernetes-xenial main
 
 *Viola! Now you can setup your cluster.*
 
+## Master Installation
+---
+
+`sudo kubeadm init`
+RIP in peace, I can't get this working. Had to turn swap off with `swapoff -a`. Still not working. Tried installing some unfound CLI it warned about. Still no luck. Give up. Try on different laptop. Same problem. Give up more.
 
 ## References
 ---
